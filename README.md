@@ -1,2 +1,2 @@
-# buildroot-openjdk9-docker
-A dockerfile that aims to build openjdk9 on various platforms
+# buildroot-openjdk-docker
+A dockerfile that aims to build a buildroot with openjdk on various platforms
