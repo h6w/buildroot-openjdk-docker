@@ -1,0 +1,11 @@
+--- package/Config.in	2018-02-19 05:48:19.597341843 +0000
++++ package/Config.in	2018-02-19 05:48:10.349272040 +0000
+@@ -552,6 +552,7 @@
+ 	source "package/gauche/Config.in"
+ 	source "package/guile/Config.in"
+ 	source "package/haserl/Config.in"
++	source "package/openjdk/Config.in"
+ 	source "package/jamvm/Config.in"
+ 	source "package/jimtcl/Config.in"
+ 	source "package/lua/Config.in"
+
