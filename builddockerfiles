@@ -1,0 +1,2 @@
+#!/bin/bash
+cat archs | xargs -I {} bash -c "sed 's/ARG BASE_DEFCONFIG/ARG BASE_DEFCONFIG={}/g' Dockerfile > Dockerfile.{}"

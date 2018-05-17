@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 ARG BUILDROOT_VERSION=2018.02.1
-ARG BASE_DEFCONFIG=pc_x86_64_bios
+ARG BASE_DEFCONFIG=pc_x86_64_efi
 LABEL maintainer="tudor@tudorholton.com"
 RUN \
 # Check for mandatory build arguments
