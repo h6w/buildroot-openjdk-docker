@@ -32,5 +32,5 @@ RUN echo "BR2_TARGET_ROOTFS_EXT2_SIZE=\"500M\"" >> /buildroot/configs/${BASE_DEF
 RUN echo "BR2_PACKAGE_OPENJDK=y" >> /buildroot/configs/${BASE_DEFCONFIG}_defconfig
 RUN make ${BASE_DEFCONFIG}_defconfig
 RUN make oldconfig
-RUN make source
+RUN make V=0 source
 RUN make
