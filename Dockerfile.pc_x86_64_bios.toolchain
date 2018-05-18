@@ -1,0 +1,3 @@
+FROM tudorh/buildroot-openjdk:pc_x86_64_bios_source
+WORKDIR /buildroot
+RUN make toolchain

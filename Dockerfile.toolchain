@@ -1,0 +1,3 @@
+FROM tudorh/buildroot-openjdk:BASE_DEFCONFIG_source
+WORKDIR /buildroot
+RUN make toolchain

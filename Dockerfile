@@ -22,7 +22,6 @@ RUN cd package \
  && git clone https://github.com/h6w/buildroot-openjdk.git openjdk \
  && cd - \
  && patch -p0 < package/openjdk/brpatch/buildroot-menu.patch
-RUN echo "BR2_PACKAGE_OPENJDK=y" >> /buildroot/configs/${BASE_DEFCONFIG}_defconfig
 RUN echo "BR2_TOOLCHAIN_BUILDROOT_LOCALE=y" >> /buildroot/configs/${BASE_DEFCONFIG}_defconfig
 RUN echo "BR2_TOOLCHAIN_BUILDROOT_CXX=y" >> /buildroot/configs/${BASE_DEFCONFIG}_defconfig
 RUN echo "BR2_PACKAGE_XORG7=y" >> /buildroot/configs/${BASE_DEFCONFIG}_defconfig
