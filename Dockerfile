@@ -33,4 +33,3 @@ RUN echo "BR2_PACKAGE_OPENJDK=y" >> /buildroot/configs/${BASE_DEFCONFIG}_defconf
 RUN make ${BASE_DEFCONFIG}_defconfig
 RUN make oldconfig
 RUN make V=0 source
-RUN make

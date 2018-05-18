@@ -1,2 +1,3 @@
 #!/bin/bash
-cat archs | xargs -I {} bash -c "sed 's/ARG BASE_DEFCONFIG/ARG BASE_DEFCONFIG={}/g' Dockerfile > Dockerfile.{}"
+cat archs | xargs -I {} bash -c "sed 's/ARG BASE_DEFCONFIG/ARG BASE_DEFCONFIG={}/g' Dockerfile > Dockerfile.{}.source"
+cat archs | xargs -I {} bash -c "sed 's/BASE_DEFCONFIG/{}/g' Dockerfile.build > Dockerfile.{}.build"
